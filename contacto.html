@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>E-Commerce Cafe | Roberto Salazar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./scss/heading-style.css">
+        <link rel="stylesheet" href="./scss/catalogo-cafes-homepage.css">
+        <link rel="stylesheet" href="./scss/blog-styles.css">
+        <link rel="stylesheet" href="./scss/map-sociales.css">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="./index.html">
+                <img src="./img/coffemates-logo-white.svg" alt="" width="300" height="53">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!-- nav finishes -->
+        <div class="main-content">
+            <div class="inner-hero-module">
+                <div class="col-half">
+                    <h1 class="heading-primary">Contacto</h1>
+                    <h3 class="heading-tertiary">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
+            <div class="band-light">
+                <div class="row-col">
+                    <div class="heading-primary">Conoce nuestras noticias</div>
+                </div>
+                <div class="row-col">
+                    <!--Columna 1-->
+                    <div class="col-lm halfWidth">
+                        <div class="form-wrapper">
+                            <!--Formulario de contacto aqui-->
+                            <form action="/respuestas.php" method="post">
+                                <fieldset>
+                                    <legend>Datos de contacto</legend>
+                                    <label for="Nombre">Nombre y apellido:</label><br>
+                                    <input type="text" id="Nombre" name="Nombre" placeholder="Juanito Banana"><br>
+                                    <label for="Telefono">Telefono:</label><br>
+                                    <input type="text" id="Telefono" name="Telefono" placeholder="(322)-XXX-XXXX"><br>
+                                    <label for="email">Correo Electronico:</label><br>
+                                    <input type="text" id="email" name="email" placeholder="correo@micorreo.com"><br>
+                                </fieldset>
+                                <fieldset>	
+                                    <legend>Suscripciones de interes</legend>
+                                    <input type="checkbox" value="newsletter">
+                                    <label for="suscripciones">Newsletter Semanal</label> <br>
+                                    <input type="checkbox" value="sub-box"> 
+                                    <label for="suscripciones">Caja de suscripcion</label><br>	
+                                    <input type="checkbox" value="cafe-grano">
+                                    <label for="suscripciones">Cafe en Grano</label><br>
+                                    <input type="checkbox" value="cafe-molido"> 	
+                                    <label for="suscripciones">Cafe Molido</label><br>
+                                </fieldset>	
+                                <fieldset> 
+                                    <legend>Presentacion del Grano</legend>
+                                    <select name="presentacion-grano">
+                                        <option value="molido">Cafe Molido</option>
+                                        <option value="molido">Cafe en Grano</option>
+                                    </select>
+                                </fieldset>
+                                <input type="reset" value="Cancelar">
+                                <input type="submit" value="Submit">
+                              </form>
+                        </div>
+                    </div>
+                    <div class="col-lm halfWidth">
+                        <div class="heading-secondary">Tomemos un Cafe</div>
+                        <div class="heading-tertiary">This is a tertiary heading.</div>
+                        <ul>
+                            <li>Keas 69 Str.
+                                15234, Chalandri
+                                Athens,
+                                Greece</li>
+                            <li>322-000-0000</li>
+                            <li>contacto@coffemates.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="band-light-alt">
+                <div class="col-fl">
+                    <h2 class="heading-primary center">¿Ganas de un cafe?</h2>
+                    <h3 class="heading-tertiary center">This is a tertiary heading</h3>
+                </div>
+                <div class="row-col" style="margin-top: 50px;">
+                    <!--Columna 1-->
+                    <div class="col-lm right">
+                        <a class="btn" href="#">Button</a>
+                    </div>
+                    <div class="col-lm left">
+                        <a class="btn" href="#">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+          <div class="bobsala-notes">
+            Todos los derechos reservados, Copyright 2021 CoffeeMates | Desarrollado con 💖 por Roberto Salazar
+          </div>
+          <div class="social-icons">
+            <!-- Twitter -->
+            <svg class="social-icon social-icon--twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+              </svg>
+
+              <!-- Linked In -->
+              <svg class="social-icon social-icon--linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+              <path d="M2 12h6v18h-6v-18z"></path>
+              <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+              </svg>
+              <!-- Github -->
+              <svg class="social-icon social-icon--github" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 512 512">
+                <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+              </svg>
+
+          </div>
+        </div>
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
