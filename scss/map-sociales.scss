@@ -1,0 +1,39 @@
+
+$social-colors: (
+  twitter: #55acee,
+  linkedin: #007bb5,
+  github: #339999,
+);
+
+.social-icon {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+@each $socialName, $socialColor in $social-colors {
+  .social-icon--#{$socialName} {
+    fill: $socialColor;
+  }
+}
+
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  .bobsala-notes{
+      margin-bottom: 0px;
+  }
+  .social-icon{
+    margin-right: 10px;
+    @media screen and (max-width: 500px) {
+      margin-right: 0;
+    }
+  }
+}

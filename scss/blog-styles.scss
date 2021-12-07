@@ -1,0 +1,31 @@
+.blog__wrapper{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 2px solid #e1e1e1;
+    box-sizing: border-box;
+    .blog__info{
+        padding: 30px;
+        padding-top: 10px;
+        .heading-secondary{
+            line-height: 1.2;
+        }
+        .blog__date{
+            font-weight: 800;
+        }
+        .blog__title{
+            padding-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .blog__text{
+            padding-top: 10px;
+            font-size: 1rem;
+        }
+    }
+    img{
+        max-width: 400px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+.col-lm{
+    width: 50%;
+    &.right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &.left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

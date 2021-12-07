@@ -1,0 +1,179 @@
+.row-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.row-col.two-col {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.row-col .table-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row-col .table-wrapper table {
+  background: #fff;
+  border: none;
+  text-align: center;
+  margin: 0 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.row-col .table-wrapper table td {
+  border: none;
+}
+
+.row-col .table-wrapper table:hover {
+  border: 3px solid #6b705c;
+  border-radius: 10px;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.row-col .primer-col {
+  width: 60%;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row-col .seg-col {
+  width: 40%;
+}
+
+.product-module {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 2px solid #e1e1e1;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.product-module img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.producto__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.producto__wrapper .producto__module {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.producto__wrapper .producto__module::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.producto__wrapper .producto__module img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.producto__wrapper .producto__module .producto__title-price {
+  position: absolute;
+  bottom: -38px;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.producto__wrapper .producto__module .producto__title-price .producto__nombre {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.producto__wrapper .producto__module .producto__title-price .producto__precio {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.producto__wrapper:hover .producto__module {
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.producto__wrapper:hover .producto__module .producto__title-price {
+  bottom: 0px;
+}
+
+.producto__wrapper:hover .producto__module .producto__title-price .producto__precio {
+  font-size: 16px;
+  color: #fff;
+  opacity: 1;
+}
+/*# sourceMappingURL=catalogo-cafes-homepage.css.map */

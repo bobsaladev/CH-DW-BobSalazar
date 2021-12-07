@@ -1,0 +1,41 @@
+.heading-primary, .heading-secondary {
+  letter-spacing: -normal;
+}
+
+.heading-primary {
+  font-size: 45px;
+  color: #83884e;
+  font-weight: 300;
+  margin: 0;
+}
+
+.heading-primary.center {
+  text-align: center;
+}
+
+.heading-secondary {
+  color: #6b705c;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.heading-secondary.center {
+  text-align: center;
+}
+
+.heading-tertiary {
+  color: #283618;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 0;
+}
+
+.heading-tertiary.center {
+  text-align: center;
+}
+
+.bottom-spacing {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=heading-style.css.map */
