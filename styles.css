@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 body {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins",sans-serif !important;
 }
 
 a {
@@ -9,7 +9,28 @@ a {
 }
 
 .main-content {
-  margin: 0px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 500px) {
+  .container-fluid button.navbar-toggler {
+    width: 15%;
+  }
+  .container-fluid a.navbar-brand {
+    width: 78%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+  }
+  .container-fluid img {
+    max-width: 250px;
+  }
 }
 
 .nav-wrapper {
@@ -124,6 +145,19 @@ button.w-100.btn.btn-lg {
   margin: 0 15px;
 }
 
+/* btn-primary Overdrive */
+.btn-primary {
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #83884e !important;
+  border: 1px solid #83884e !important;
+  color: #fff;
+}
+
 .col-half {
   padding-bottom: 30px;
 }
@@ -202,6 +236,12 @@ button.w-100.btn.btn-lg {
   padding: 80px;
 }
 
+@media only screen and (max-width: 980px) {
+  .band-light, .band-light-alt, .band-dark, .contact-band {
+    padding: 50px 30px;
+  }
+}
+
 .contact-band {
   background: #f7f7f7;
   background: -webkit-gradient(linear, left bottom, left top, from(#f7f7f7), color-stop(29%, #ecf1e4), to(#f7f7f7));
@@ -236,8 +276,8 @@ button.w-100.btn.btn-lg {
 
 @media only screen and (max-width: 980px) {
   .containerProductos {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 5fr;
         grid-template-rows: 5fr;
         grid-template-areas: "Feature-Product" "Producto" "Producto1" "Producto2" "Special-Offer";
@@ -296,6 +336,12 @@ button.w-100.btn.btn-lg {
   background-size: 110% !important;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  .elemento-cont {
+    padding: 30px;
+  }
 }
 
 .elemento-cont:hover {
@@ -495,5 +541,24 @@ button.w-100.btn.btn-lg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.btn-outline-primary {
+  color: #6b705c !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+button.w-100.btn.btn-lg.btn-primary {
+  color: #6b705c;
+  border: 1px solid #6b705c !important;
+}
+
+button.w-100.btn.btn-lg.btn-primary:hover {
+  color: #fff !important;
+  border: 1px solid #fff !important;
 }
 /*# sourceMappingURL=styles.css.map */

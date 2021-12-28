@@ -9,6 +9,13 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 980px) {
+  .heading-primary {
+    text-align: center;
+    line-heigh: 1;
+  }
+}
+
 .heading-primary.center {
   text-align: center;
 }
@@ -20,6 +27,13 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 980px) {
+  .heading-secondary {
+    text-align: center;
+    line-heigh: 1;
+  }
+}
+
 .heading-secondary.center {
   text-align: center;
 }
@@ -29,6 +43,13 @@
   font-weight: 400;
   font-size: 28px;
   margin: 0;
+}
+
+@media only screen and (max-width: 980px) {
+  .heading-tertiary {
+    text-align: center;
+    line-heigh: 1;
+  }
 }
 
 .heading-tertiary.center {

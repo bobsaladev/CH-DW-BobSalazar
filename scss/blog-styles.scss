@@ -4,6 +4,9 @@
     margin: 0 auto;
     border: 2px solid #e1e1e1;
     box-sizing: border-box;
+    @media only screen and (max-width: 980px) {
+        max-width: 500px;
+    }
     .blog__info{
         padding: 30px;
         padding-top: 10px;
@@ -27,5 +30,9 @@
     img{
         max-width: 400px;
         width: 100%;
+        @media only screen and (max-width: 980px) {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
     }
 }

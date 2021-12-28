@@ -34,6 +34,13 @@
           justify-content: center;
 }
 
+@media only screen and (max-width: 980px) {
+  .footer {
+    padding: 0 30px;
+    text-align: center;
+  }
+}
+
 .footer .bobsala-notes {
   margin-bottom: 0px;
 }

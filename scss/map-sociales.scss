@@ -27,6 +27,11 @@ $social-colors: (
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
+  @media only screen and (max-width: 980px) {
+    padding: 0 30px;
+    text-align: center;
+  }
+
   .bobsala-notes{
       margin-bottom: 0px;
   }

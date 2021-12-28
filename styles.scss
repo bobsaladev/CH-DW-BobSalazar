@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 
 body{
     margin: 0;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins",sans-serif !important;
 }
 
 a{
@@ -10,7 +10,25 @@ a{
 }
 
 .main-content{
-    margin: 0px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@media only screen and (max-width: 500px) {
+    .container-fluid{
+        button.navbar-toggler {
+            width: 15%;
+        }
+        a.navbar-brand {
+            width: 78%;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+        }
+        img{
+            max-width: 250px;
+        }
+    }
 }
 
 .nav-wrapper {
@@ -110,10 +128,25 @@ button.w-100.btn.btn-lg{
     font-style: italic;
 }
 
+
 .btn{
     padding: 10px 20px;
     margin: 0 15px;
 }
+
+/* btn-primary Overdrive */
+
+.btn-primary{
+    background: transparent !important;
+    border: 1px solid #fff !important;
+    color: #fff;
+    &:hover{
+        background: #83884e !important;
+        border: 1px solid #83884e !important;
+        color: #fff;
+    }
+}
+
 
 .col-half{
     padding-bottom: 30px;
@@ -169,6 +202,9 @@ button.w-100.btn.btn-lg{
 
 .band-light, .band-light-alt, .band-dark, .contact-band{
     padding: 80px;
+    @media only screen and (max-width: 980px) {
+        padding: 50px 30px;
+    }
 }
 
 .contact-band {
@@ -200,7 +236,7 @@ button.w-100.btn.btn-lg{
       "Feature-Product Feature-Product Feature-Product Producto"
       "Producto1 Producto2 Special-Offer Special-Offer";
     @media only screen and (max-width: 980px) {
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr ;
         grid-template-rows: 5fr ;
         grid-template-areas:
             "Feature-Product"
@@ -248,6 +284,9 @@ button.w-100.btn.btn-lg{
     background-size: 110% !important;
     text-transform: uppercase;
     font-weight: 600;
+    @media only screen and (max-width: 500px) {
+        padding: 30px;
+    }
     &:hover{
         transform: scale(.95);
         border: 3px solid #6b705c;
@@ -402,3 +441,19 @@ button.w-100.btn.btn-lg{
     background-size: cover;
   }
   
+  .btn-outline-primary{
+    color: #6b705c !important;
+    &:hover{
+        color: #fff !important;
+        border: 1px solid #fff !important;
+    }
+  }
+
+  button.w-100.btn.btn-lg.btn-primary {
+    color: #6b705c;
+    border: 1px solid #6b705c !important;
+    &:hover{
+        color: #fff !important;
+        border: 1px solid #fff !important;
+    }
+}
