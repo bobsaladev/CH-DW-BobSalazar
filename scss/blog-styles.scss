@@ -10,6 +10,10 @@
     .blog__info{
         padding: 30px;
         padding-top: 10px;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         .heading-secondary{
             line-height: 1.2;
         }

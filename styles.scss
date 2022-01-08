@@ -68,6 +68,28 @@ a{
     }
 }
 
+.input-group-prepend {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    display: flex;
+}
+
+.input-group-text{
+    background-color: unset !important;
+    border: unset !important;
+    border-radius: unset !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-group.row{
+        flex-direction: column;
+    }
+    .col-form-label, .col-8{
+        width: 100% !important;
+    }
+}
+
 /* Carousel base class */
 .carousel {
     //margin-bottom: 4rem;
